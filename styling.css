@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --black: #2E2E2E;
+  --text: 2vmin;
+  --icon: 3vmin;
+}
+* {
+	font-family: 'Roboto', sans-serif;
+}
+h1 {
+	font-size:  var(--icon);
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+#content {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(Main-_-Image.svg);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(2.2); 
+	filter: blur(10px);
+	text-align: center;
+}
+#window {
+	position: relative;
+	top: 30vh;
+	margin: auto;
+	height: 40vh;
+	width: 40vw;
+	max-width: 1024px;
+	min-width: 300px;
+	background-color: var(--black);
+	border-radius: 5px;
+}
+#left {
+	height: 40vh;
+	width: 20vw;
+	max-width: 512px;
+	min-width: 150px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	float: left;
+	background-color: var(--black);
+}
+#left img {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+#right::-webkit-scrollbar {
+	width: 0vw;
+}
+#right {
+	height: 40vh;
+	width: 20vw;
+	max-width: 512px;
+	min-width: 150px;
+	float: right;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	overflow-x:  scroll;
+}
+#links a {
+	position: relative;
+	top: 2vh;
+	width: 16vw;
+	max-width: 358.4px;
+	border-radius: 2px;
+	font-size: var(--text);
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 1vh auto;
+	padding: 1.5vh 0vw 1.5vh 0vw;
+	overflow-x: hidden;
+}
+#right i {
+	position: absolute;
+	bottom: 5vh;
+	font-size: var(--icon);
+}
